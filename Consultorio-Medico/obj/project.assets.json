@@ -8,19 +8,24 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\AGUSTIN\\.nuget\\packages\\": {}
+    "C:\\Users\\Educacion\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AGUSTIN\\source\\repos\\Consultorio-Medico\\Consultorio-Medico\\Consultorio-Medico.csproj",
+      "projectUniqueName": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Consultorio-Medico.csproj",
       "projectName": "Consultorio-Medico",
-      "projectPath": "C:\\Users\\AGUSTIN\\source\\repos\\Consultorio-Medico\\Consultorio-Medico\\Consultorio-Medico.csproj",
-      "packagesPath": "C:\\Users\\AGUSTIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AGUSTIN\\source\\repos\\Consultorio-Medico\\Consultorio-Medico\\obj\\",
+      "projectPath": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Consultorio-Medico.csproj",
+      "packagesPath": "C:\\Users\\Educacion\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\AGUSTIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Educacion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
