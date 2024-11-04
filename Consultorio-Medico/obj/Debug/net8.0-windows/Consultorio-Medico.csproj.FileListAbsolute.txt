@@ -1,0 +1,17 @@
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\obj\Debug\net8.0-windows\Consultorio_Medico.Form1.resources
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\obj\Debug\net8.0-windows\Consultorio-Medico.csproj.GenerateResource.cache
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\obj\Debug\net8.0-windows\Consultorio-Medico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\obj\Debug\net8.0-windows\Consultorio-Medico.AssemblyInfoInputs.cache
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\obj\Debug\net8.0-windows\Consultorio-Medico.AssemblyInfo.cs
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\obj\Debug\net8.0-windows\Consultorio-Medico.csproj.CoreCompileInputs.cache
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\obj\Debug\net8.0-windows\Consultorio-Medico.sourcelink.json
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\bin\Debug\net8.0-windows\Consultorio-Medico.exe
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\bin\Debug\net8.0-windows\Consultorio-Medico.deps.json
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\bin\Debug\net8.0-windows\Consultorio-Medico.runtimeconfig.json
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\bin\Debug\net8.0-windows\Consultorio-Medico.dll
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\bin\Debug\net8.0-windows\Consultorio-Medico.pdb
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\obj\Debug\net8.0-windows\Consultorio-Medico.dll
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\obj\Debug\net8.0-windows\refint\Consultorio-Medico.dll
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\obj\Debug\net8.0-windows\Consultorio-Medico.pdb
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\obj\Debug\net8.0-windows\Consultorio-Medico.genruntimeconfig.cache
+C:\Users\AGUSTIN\Documents\GitHub\consultorio-windows-forms\Consultorio-Medico\obj\Debug\net8.0-windows\ref\Consultorio-Medico.dll
