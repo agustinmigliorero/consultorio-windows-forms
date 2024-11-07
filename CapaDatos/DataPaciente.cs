@@ -13,7 +13,8 @@ namespace CapaDatos
         public static List<Paciente> VerPacientes()
         {
             List<Paciente> pacientes = new List<Paciente>();
-            SqlConnection conexion = new SqlConnection("Server=NOTEBOOK-FACU;Database=Clinic;User Id=sa;Password=1234;TrustServerCertificate=True;");
+            SqlConnection conexion = new SqlConnection(StringConnection.StrConnection);
+
             conexion.Open();
             SqlCommand comando = new SqlCommand("SELECT patientId, firstName, lastName , dni, mobilePhone, medicalRecordNumber FROM Patients");
             comando.Connection = conexion;
@@ -28,7 +29,8 @@ namespace CapaDatos
 
         public static Paciente VerPaciente(SByte idPaciente)
         {
-            SqlConnection conexion = new SqlConnection("Server=Agus-PC;Database=Clinic;User Id=sa;Password=1234;TrustServerCertificate=True;");
+            SqlConnection conexion = new SqlConnection(StringConnection.StrConnection);
+
             conexion.Open();
             SqlCommand comando = new SqlCommand("SELECT patientId, firstName, lastName , dni, mobilePhone, phone, medicalRecordNumber, birthDate, notes, status FROM Patients WHERE patientId = " + idPaciente + " order by lastName");
             comando.Connection = conexion;
