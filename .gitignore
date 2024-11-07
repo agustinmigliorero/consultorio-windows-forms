@@ -1,0 +1,29 @@
+# Compiled binary artifacts
+/bin/
+/obj/
+CapaDatos/bin
+Entidades/bin
+CapaDatos/obj
+Entidades/obj
+Consultorio-Medico/obj
+Consultorio-Medico/bin
+
+.vs/Consultorio-Medico
+.vs/ProjectEvaluation
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+.vscode/
+.env/
+
+# Build directory
+_build/
+
+# Visual Studio temporary files
+.vs/
