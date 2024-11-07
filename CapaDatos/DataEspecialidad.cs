@@ -13,7 +13,7 @@ namespace CapaDatos
         public static List<Especialidad> CargarEspecialidades()
         {
             List<Especialidad> Especialidades = new List<Especialidad>();
-            SqlConnection connect = new SqlConnection("Server=NOTEBOOK-FACU;Database=Clinic;User Id=sa;Password=1234;TrustServerCertificate=True;");
+            SqlConnection connect = new SqlConnection(StringConnection.StrConnection);
             connect.Open();
             SqlCommand command = new SqlCommand();
             command.CommandText = "SELECT specialtyId, specialtyName FROM Specialties ORDER BY specialtyName";
