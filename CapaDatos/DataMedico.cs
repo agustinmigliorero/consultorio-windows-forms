@@ -13,7 +13,7 @@ namespace CapaDatos
         public static List<Medico> VerMedicosPorEspecialidad(SByte idEspecialidad)
         {
             List<Medico> medicos = new List<Medico>();
-            SqlConnection conexion = new SqlConnection("Server=NOTEBOOK-FACU;Database=Clinic;User Id=sa;Password=1234;TrustServerCertificate=True;");
+            SqlConnection conexion = new SqlConnection(StringConnection.StrConnection);
             conexion.Open();
             SqlCommand comando = new SqlCommand("SELECT professionalId, firstName, lastName , dni, mobilePhone, email FROM Professionals WHERE specialtyId = " + idEspecialidad.ToString() + " order by lastName");
             comando.Connection = conexion;
