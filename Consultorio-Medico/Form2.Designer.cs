@@ -31,6 +31,7 @@
             comboBoxPacientesform2 = new ComboBox();
             label1 = new Label();
             listBoxDatosPacienteform2 = new ListBox();
+            Siguiente = new Button();
             SuspendLayout();
             // 
             // comboBoxPacientesform2
@@ -62,11 +63,22 @@
             listBoxDatosPacienteform2.TabIndex = 2;
             listBoxDatosPacienteform2.SelectedIndexChanged += listBoxDatosPacienteform2_SelectedIndexChanged;
             // 
+            // Siguiente
+            // 
+            Siguiente.Location = new Point(333, 323);
+            Siguiente.Name = "Siguiente";
+            Siguiente.Size = new Size(102, 50);
+            Siguiente.TabIndex = 3;
+            Siguiente.Text = "Siguiente";
+            Siguiente.UseVisualStyleBackColor = true;
+            Siguiente.Click += Siguiente_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(Siguiente);
             Controls.Add(listBoxDatosPacienteform2);
             Controls.Add(label1);
             Controls.Add(comboBoxPacientesform2);
@@ -81,5 +93,6 @@
         private ComboBox comboBoxPacientesform2;
         private Label label1;
         private ListBox listBoxDatosPacienteform2;
+        private Button Siguiente;
     }
 }
