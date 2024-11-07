@@ -5,9 +5,12 @@ VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consultorio-Medico", "Consultorio-Medico\Consultorio-Medico.csproj", "{17E0E2F2-66E6-4711-8B26-11032E105F5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{8ED6D116-7052-4583-9FB0-6A4C834308BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{8ED6D116-7052-4583-9FB0-6A4C834308BF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013} = {6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", "Entidades\Entidades.csproj", "{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

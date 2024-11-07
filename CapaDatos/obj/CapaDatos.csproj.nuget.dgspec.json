@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj": {}
+    "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj": {
+    "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj",
+        "projectUniqueName": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj",
         "projectName": "CapaDatos",
-        "projectPath": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj",
-        "packagesPath": "C:\\Users\\agust\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\CapaDatos\\obj\\",
+        "projectPath": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj",
+        "packagesPath": "C:\\Users\\Educacion\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\CapaDatos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\agust\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Educacion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj"
+              "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -64,21 +69,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\agust\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Entidades\\obj\\",
+        "projectPath": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\Educacion\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\agust\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Educacion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,6 +95,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -124,7 +134,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

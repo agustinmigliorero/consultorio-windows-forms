@@ -1,84 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Consultorio-Medico.csproj": {}
+    "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Consultorio-Medico.csproj": {}
   },
   "projects": {
-    "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj": {
+    "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Consultorio-Medico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj",
-        "projectName": "CapaDatos",
-        "projectPath": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj",
-        "packagesPath": "C:\\Users\\agust\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\CapaDatos\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\agust\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Consultorio-Medico.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Consultorio-Medico.csproj",
+        "projectUniqueName": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Consultorio-Medico.csproj",
         "projectName": "Consultorio-Medico",
-        "projectPath": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Consultorio-Medico.csproj",
-        "packagesPath": "C:\\Users\\agust\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\obj\\",
+        "projectPath": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Consultorio-Medico.csproj",
+        "packagesPath": "C:\\Users\\Educacion\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\agust\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Educacion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,16 +26,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
-            "projectReferences": {
-              "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj": {
-                "projectPath": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -112,6 +49,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -131,67 +74,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
-        "projectName": "Entidades",
-        "projectPath": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\agust\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agust\\OneDrive\\Documentos\\GitHub\\consultorio-windows-forms\\Entidades\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\agust\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
