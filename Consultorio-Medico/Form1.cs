@@ -7,6 +7,7 @@ namespace Consultorio_Medico
     public partial class Form1 : Form
     {
         public Paciente DatosPacienteSelecionado { get; set; }
+        public Medico DatosMedicoSeleccionado { get; set; }
         public Form1()
         {
             InitializeComponent();
@@ -51,6 +52,8 @@ namespace Consultorio_Medico
 
         private void comboBoxMedicos_SelectedIndexChanged(object sender, EventArgs e)
         {
+            var medicoId = Convert.ToSByte(comboBoxMedicos.SelectedItem.ToString().Split(' ')[0]);
+            DatosMedicoSeleccionado=DataMedico.
 
         }
 
@@ -80,7 +83,8 @@ namespace Consultorio_Medico
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Form5 nuevoFormulario = new Form5(DatosPacienteSelecionado, DatosMedicoSeleccionado);
+            nuevoFormulario.ShowDialog();
         }
 
         private void listViewDatosPacientes_SelectedIndexChanged(object sender, EventArgs e)
