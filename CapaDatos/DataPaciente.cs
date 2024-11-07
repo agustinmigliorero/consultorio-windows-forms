@@ -48,7 +48,8 @@ namespace CapaDatos
                 paciente.HistoriaClinica = dataReader[6].ToString();
                 paciente.FechaNacimiento = DateTime.Parse(dataReader[7].ToString());
                 paciente.Notas = dataReader[8].ToString();
-                paciente.Estado = dataReader[9].ToString() == "1";
+                string estadoQuery = dataReader[9].ToString();
+                paciente.Estado = estadoQuery == "1";
             }
             return paciente;
         }
