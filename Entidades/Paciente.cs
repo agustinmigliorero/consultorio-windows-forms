@@ -17,7 +17,12 @@ namespace Entidades
 
         public string Notas { get; set; }
 
-        public bool Estado { get; set; }
+        private string estado; 
+        public string Estado
+        {
+            get { return estado == "True" ? "Activo" : "Inactivo"; }
+            set { estado = value; }
+        }
 
         public Paciente() { 
         
@@ -31,7 +36,7 @@ namespace Entidades
             HistoriaClinica = historiaClinica;
         }
 
-        public Paciente(SByte idPaciente, string nombre, string apellido, string dni, string telefono, string telefonoFijo, string historiaClinica, DateTime fechaNacimiento, string notas, bool estado)
+        public Paciente(SByte idPaciente, string nombre, string apellido, string dni, string telefono, string telefonoFijo, string historiaClinica, DateTime fechaNacimiento, string notas, string estado = "True")
         {
             IdPaciente = idPaciente;
             Nombre = nombre;
