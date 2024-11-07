@@ -24,7 +24,7 @@ namespace CapaDatos
                     {
                         Agenda agenda = new Agenda
                         {
-                            IdAgenda = Convert.ToSByte(dataReader["scheduleId"]),
+                            IdAgenda = Convert.ToInt32(dataReader["scheduleId"]),
                             Dia = dataReader["day"].ToString(),
                             Horario = TimeSpan.Parse(dataReader["time"].ToString()),
                             IdMedico = Convert.ToInt32(dataReader["professionalId"])

@@ -8,7 +8,7 @@ namespace Entidades
 {
     public class Agenda
     {
-        public SByte IdAgenda { get; set; }
+        public int IdAgenda { get; set; }
         public string Dia { get; set; }
         public TimeSpan Horario { get; set; }
         public int IdMedico { get; set; }
@@ -17,7 +17,7 @@ namespace Entidades
         public Agenda() { }
 
         // Constructor con parámetros
-        public Agenda(SByte idAgenda, string dia, TimeSpan horario, int idMedico)
+        public Agenda(int idAgenda, string dia, TimeSpan horario, int idMedico)
         {
             IdAgenda = idAgenda;
             Dia = dia;
