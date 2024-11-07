@@ -36,6 +36,19 @@ namespace Entidades
             HistoriaClinica = historiaClinica;
         }
 
+        public Paciente(string nombre, string apellido, string dni, string telefono, string telefonoFijo, string historiaClinica, DateTime fechaNacimiento, string notas, string estado = "True")
+        {
+            Nombre = nombre;
+            Apellido = apellido;
+            DNI = dni;
+            Telefono = telefono;
+            TelefonoFijo = telefonoFijo;
+            HistoriaClinica = historiaClinica;
+            FechaNacimiento = fechaNacimiento;
+            Notas = notas;
+            Estado = estado;
+        }
+
         public Paciente(SByte idPaciente, string nombre, string apellido, string dni, string telefono, string telefonoFijo, string historiaClinica, DateTime fechaNacimiento, string notas, string estado = "True")
         {
             IdPaciente = idPaciente;
