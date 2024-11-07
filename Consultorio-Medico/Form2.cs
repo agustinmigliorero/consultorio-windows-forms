@@ -16,20 +16,27 @@ namespace Consultorio_Medico
     public partial class Form2 : Form
     {
         public Paciente Datospaciente { get; set; }
-        public Form2(List<Paciente> Listpacient)
+        public Form2()
         {
             InitializeComponent();
 
-            //se muestra el listado de pacientes
-            foreach (Paciente pacientes in Listpacient)
-            {
-                comboBoxPacientesform2.Items.Add(pacientes.IdPaciente + " " + pacientes.Nombre + " " + pacientes.Apellido);
-            }
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBoxPacientesform2_Click(object sender, EventArgs e)
+        {
+            comboBoxPacientesform2.Items.Clear();
+            List<Paciente> Listpacient;
+            Listpacient = DataPaciente.VerPacientes();
+            //se muestra el listado de pacientes
+            foreach (Paciente pacientes in Listpacient)
+            {
+                comboBoxPacientesform2.Items.Add(pacientes.IdPaciente + " " + pacientes.Nombre + " " + pacientes.Apellido);
+            }
         }
 
         private void comboBoxPacientesform2_SelectedIndexChanged(object sender, EventArgs e)
@@ -75,6 +82,12 @@ namespace Consultorio_Medico
         private void botoncrearPaciente_Click(object sender, EventArgs e)
         {
             Form3 nuevoFormulario = new Form3();
+            nuevoFormulario.ShowDialog();
+        }
+
+        private void buttonEditarpac_Click(object sender, EventArgs e)
+        {
+            Form4 nuevoFormulario = new Form4(Datospaciente);
             nuevoFormulario.ShowDialog();
         }
     }
