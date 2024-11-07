@@ -88,7 +88,7 @@ namespace CapaDatos
 
                 using (SqlCommand comando = new SqlCommand(query, conexion))
                 {
-                    comando.Parameters.AddWithValue("@PatientId", paciente.IdPaciente);
+                    comando.Parameters.AddWithValue("@PatientId",Convert.ToInt32(paciente.IdPaciente));
                     comando.Parameters.AddWithValue("@FirstName", paciente.Nombre);
                     comando.Parameters.AddWithValue("@LastName", paciente.Apellido);
                     comando.Parameters.AddWithValue("@DNI", paciente.DNI);

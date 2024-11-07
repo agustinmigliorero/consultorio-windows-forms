@@ -84,7 +84,8 @@ namespace Consultorio_Medico
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
-
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
     }
 }

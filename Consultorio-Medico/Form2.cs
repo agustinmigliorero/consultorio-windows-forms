@@ -19,7 +19,7 @@ namespace Consultorio_Medico
         public Form2()
         {
             InitializeComponent();
-           
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -27,7 +27,7 @@ namespace Consultorio_Medico
 
         }
 
-        private  void comboBoxPacientesform2_Click(object sender, EventArgs e)
+        private void comboBoxPacientesform2_Click(object sender, EventArgs e)
         {
             comboBoxPacientesform2.Items.Clear();
             List<Paciente> Listpacient;
@@ -82,6 +82,12 @@ namespace Consultorio_Medico
         private void botoncrearPaciente_Click(object sender, EventArgs e)
         {
             Form3 nuevoFormulario = new Form3();
+            nuevoFormulario.ShowDialog();
+        }
+
+        private void buttonEditarpac_Click(object sender, EventArgs e)
+        {
+            Form4 nuevoFormulario = new Form4(Datospaciente);
             nuevoFormulario.ShowDialog();
         }
     }
