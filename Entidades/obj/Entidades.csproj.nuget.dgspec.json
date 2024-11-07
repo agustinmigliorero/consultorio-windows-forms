@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj": {}
+    "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\AGUSTIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\obj\\",
+        "projectPath": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\Educacion\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\AGUSTIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Educacion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

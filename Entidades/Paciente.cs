@@ -14,6 +14,15 @@ namespace Entidades
         public Paciente() { 
         
         }
+        
+        public Paciente(sbyte idpaciente,string apellido,string nombre,string dni)
+        {
+            IdPaciente = idpaciente;
+            Apellido = apellido;
+            Nombre = nombre;
+            DNI = dni;
+
+        }
         public Paciente(SByte idPaciente, string nombre, string apellido, string dni, string telefono, string historiaClinica) {
             IdPaciente = idPaciente;
             Nombre = nombre;
