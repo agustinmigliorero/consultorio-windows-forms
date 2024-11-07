@@ -16,6 +16,11 @@ namespace Consultorio_Medico
         public Form3()
         {
             InitializeComponent();
+            
+        }
+
+        private void Form3_Load(object sender, EventArgs e) {
+            btnInvisible.Focus();
         }
 
 
