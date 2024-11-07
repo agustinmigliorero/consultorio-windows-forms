@@ -58,7 +58,7 @@ namespace Consultorio_Medico
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Siguiente_Click(object sender, EventArgs e)
@@ -70,6 +70,12 @@ namespace Consultorio_Medico
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
+        }
+
+        private void botoncrearPaciente_Click(object sender, EventArgs e)
+        {
+            Form3 nuevoFormulario = new Form3();
+            nuevoFormulario.ShowDialog();
         }
     }
 }

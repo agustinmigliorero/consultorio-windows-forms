@@ -32,6 +32,7 @@
             label1 = new Label();
             listBoxDatosPacienteform2 = new ListBox();
             Siguiente = new Button();
+            botoncrearPaciente = new Button();
             SuspendLayout();
             // 
             // comboBoxPacientesform2
@@ -73,11 +74,22 @@
             Siguiente.UseVisualStyleBackColor = true;
             Siguiente.Click += Siguiente_Click;
             // 
+            // botoncrearPaciente
+            // 
+            botoncrearPaciente.Location = new Point(495, 65);
+            botoncrearPaciente.Name = "botoncrearPaciente";
+            botoncrearPaciente.Size = new Size(222, 36);
+            botoncrearPaciente.TabIndex = 4;
+            botoncrearPaciente.Text = "Crear Paciente";
+            botoncrearPaciente.UseVisualStyleBackColor = true;
+            botoncrearPaciente.Click += botoncrearPaciente_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(botoncrearPaciente);
             Controls.Add(Siguiente);
             Controls.Add(listBoxDatosPacienteform2);
             Controls.Add(label1);
@@ -94,5 +106,6 @@
         private Label label1;
         private ListBox listBoxDatosPacienteform2;
         private Button Siguiente;
+        private Button botoncrearPaciente;
     }
 }
