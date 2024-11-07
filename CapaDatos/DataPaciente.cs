@@ -52,5 +52,74 @@ namespace CapaDatos
             }
             return paciente;
         }
+
+        public static void CrearPaciente(Paciente nuevoPaciente)
+        {
+            using (SqlConnection conexion = new SqlConnection(StringConnection.StrConnection))
+            {
+                string query = "INSERT INTO Patients (firstName, lastName, dni, mobilePhone, phone, medicalRecordNumber, birthDate, notes, status) " +
+                               "VALUES (@FirstName, @LastName, @DNI, @MobilePhone, @Phone, @MedicalRecordNumber, @BirthDate, @Notes, @Status)";
+
+                using (SqlCommand comando = new SqlCommand(query, conexion))
+                {
+                    comando.Parameters.AddWithValue("@FirstName", nuevoPaciente.Nombre);
+                    comando.Parameters.AddWithValue("@LastName", nuevoPaciente.Apellido);
+                    comando.Parameters.AddWithValue("@DNI", nuevoPaciente.DNI);
+                    comando.Parameters.AddWithValue("@MobilePhone", nuevoPaciente.Telefono);
+                    comando.Parameters.AddWithValue("@Phone", nuevoPaciente.TelefonoFijo);
+                    comando.Parameters.AddWithValue("@MedicalRecordNumber", nuevoPaciente.HistoriaClinica);
+                    comando.Parameters.AddWithValue("@BirthDate", nuevoPaciente.FechaNacimiento);
+                    comando.Parameters.AddWithValue("@Notes", nuevoPaciente.Notas);
+                    comando.Parameters.AddWithValue("@Status", nuevoPaciente.Estado ? 1 : 0);
+
+                    conexion.Open();
+                    comando.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public static void EditarPaciente(Paciente paciente)
+        {
+            using (SqlConnection conexion = new SqlConnection(StringConnection.StrConnection))
+            {
+                string query = "UPDATE Patients SET firstName = @FirstName, lastName = @LastName, dni = @DNI, " +
+                               "mobilePhone = @MobilePhone, phone = @Phone, medicalRecordNumber = @MedicalRecordNumber, " +
+                               "birthDate = @BirthDate, notes = @Notes WHERE patientId = @PatientId";
+
+                using (SqlCommand comando = new SqlCommand(query, conexion))
+                {
+                    comando.Parameters.AddWithValue("@PatientId", paciente.IdPaciente);
+                    comando.Parameters.AddWithValue("@FirstName", paciente.Nombre);
+                    comando.Parameters.AddWithValue("@LastName", paciente.Apellido);
+                    comando.Parameters.AddWithValue("@DNI", paciente.DNI);
+                    comando.Parameters.AddWithValue("@MobilePhone", paciente.Telefono);
+                    comando.Parameters.AddWithValue("@Phone", paciente.TelefonoFijo);
+                    comando.Parameters.AddWithValue("@MedicalRecordNumber", paciente.HistoriaClinica);
+                    comando.Parameters.AddWithValue("@BirthDate", paciente.FechaNacimiento);
+                    comando.Parameters.AddWithValue("@Notes", paciente.Notas);
+
+                    conexion.Open();
+                    comando.ExecuteNonQuery();
+                }
+            }
+        }
+
+
+        public static void EditarEstadoPaciente(int idPaciente, bool nuevoEstado)
+        {
+            using (SqlConnection conexion = new SqlConnection(StringConnection.StrConnection))
+            {
+                string query = "UPDATE Patients SET status = @Status WHERE patientId = @PatientId";
+
+                using (SqlCommand comando = new SqlCommand(query, conexion))
+                {
+                    comando.Parameters.AddWithValue("@PatientId", idPaciente);
+                    comando.Parameters.AddWithValue("@Status", nuevoEstado ? 1 : 0);
+
+                    conexion.Open();
+                    comando.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }
