@@ -13,4 +13,9 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj" />
+    <ProjectReference Include="..\Entidades\Entidades.csproj" />
+  </ItemGroup>
+
 </Project>

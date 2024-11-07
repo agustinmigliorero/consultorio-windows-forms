@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    internal class Base
+    public class Datos
     {
         public static List<Especialidad> CargarEspecialidades()
         {
