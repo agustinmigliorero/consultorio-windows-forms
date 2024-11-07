@@ -121,5 +121,23 @@ namespace CapaDatos
                 }
             }
         }
+
+        public static void EliminarPaciente(SByte idPaciente)
+        {
+            using (SqlConnection conexion = new SqlConnection(StringConnection.StrConnection))
+            {
+                string query = "DELETE FROM Patients WHERE patientId = @PatientId";
+
+                using (SqlCommand comando = new SqlCommand(query, conexion))
+                {
+                    comando.Parameters.AddWithValue("@PatientId", idPaciente);
+
+                    conexion.Open();
+                    comando.ExecuteNonQuery();
+                }
+            }
+        }
+
+
     }
 }
