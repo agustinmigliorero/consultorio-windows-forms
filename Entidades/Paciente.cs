@@ -17,12 +17,7 @@ namespace Entidades
 
         public string Notas { get; set; }
 
-        private string estado; 
-        public string Estado
-        {
-            get { return estado == "True" ? "Activo" : "Inactivo"; }
-            set { estado = value; }
-        }
+        public string Estado {  get; set; }
 
         public Paciente() { 
         

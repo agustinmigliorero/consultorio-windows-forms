@@ -43,6 +43,7 @@
             comboBoxPacientesform2.Size = new Size(271, 23);
             comboBoxPacientesform2.TabIndex = 0;
             comboBoxPacientesform2.SelectedIndexChanged += comboBoxPacientesform2_SelectedIndexChanged;
+            comboBoxPacientesform2.Click += comboBoxPacientesform2_Click;
             // 
             // label1
             // 
@@ -63,6 +64,7 @@
             listBoxDatosPacienteform2.Size = new Size(271, 139);
             listBoxDatosPacienteform2.TabIndex = 2;
             listBoxDatosPacienteform2.SelectedIndexChanged += listBoxDatosPacienteform2_SelectedIndexChanged;
+             
             // 
             // Siguiente
             // 

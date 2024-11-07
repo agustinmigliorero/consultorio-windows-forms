@@ -1,4 +1,5 @@
-﻿using Entidades;
+﻿using CapaDatos;
+using Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -74,8 +75,11 @@ namespace Consultorio_Medico
             Creapaciente.HistoriaClinica= textBoxHisclin.Text;
             Creapaciente.Telefono=textBoxtel.Text;
             Creapaciente.TelefonoFijo= textBoxtelfijo.Text;
-            Creapaciente.Notas= textBoxnotas.Text; 
-
+            Creapaciente.Notas= textBoxnotas.Text;
+            Creapaciente.Estado = "True";
+            DataPaciente.CrearPaciente( Creapaciente );
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)
