@@ -1,49 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\",
+  "WorkspaceRootPath": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8ED6D116-7052-4583-9FB0-6A4C834308BF}|CapaDatos\\CapaDatos.csproj|c:\\users\\educacion\\documents\\github\\consultorio-windows-forms\\capadatos\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8ED6D116-7052-4583-9FB0-6A4C834308BF}|CapaDatos\\CapaDatos.csproj|c:\\users\\agustin\\documents\\github\\consultorio-windows-forms\\capadatos\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8ED6D116-7052-4583-9FB0-6A4C834308BF}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|c:\\users\\educacion\\documents\\github\\consultorio-windows-forms\\entidades\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|solutionrelative:entidades\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|c:\\users\\educacion\\documents\\github\\consultorio-windows-forms\\entidades\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|solutionrelative:entidades\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8ED6D116-7052-4583-9FB0-6A4C834308BF}|CapaDatos\\CapaDatos.csproj|c:\\users\\educacion\\documents\\github\\consultorio-windows-forms\\capadatos\\capadatos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8ED6D116-7052-4583-9FB0-6A4C834308BF}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\capadatos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|c:\\users\\educacion\\documents\\github\\consultorio-windows-forms\\entidades\\entidades.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "AbsoluteMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|c:\\users\\agustin\\documents\\github\\consultorio-windows-forms\\entidades\\entidades.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|solutionrelative:entidades\\entidades.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|c:\\users\\educacion\\documents\\github\\consultorio-windows-forms\\entidades\\entidades.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|c:\\users\\agustin\\documents\\github\\consultorio-windows-forms\\entidades\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|solutionrelative:entidades\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|c:\\users\\agustin\\documents\\github\\consultorio-windows-forms\\entidades\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|solutionrelative:entidades\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ED6D116-7052-4583-9FB0-6A4C834308BF}|CapaDatos\\CapaDatos.csproj|c:\\users\\agustin\\documents\\github\\consultorio-windows-forms\\capadatos\\capadatos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8ED6D116-7052-4583-9FB0-6A4C834308BF}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\capadatos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|c:\\users\\agustin\\documents\\github\\consultorio-windows-forms\\entidades\\entidades.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|solutionrelative:entidades\\entidades.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|c:\\users\\educacion\\documents\\github\\consultorio-windows-forms\\entidades\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|c:\\users\\agustin\\documents\\github\\consultorio-windows-forms\\entidades\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|solutionrelative:entidades\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|c:\\users\\educacion\\documents\\github\\consultorio-windows-forms\\entidades\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|c:\\users\\agustin\\documents\\github\\consultorio-windows-forms\\entidades\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A6FEE3E-D463-4BCF-8A4E-2D5D62264013}|Entidades\\Entidades.csproj|solutionrelative:entidades\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17E0E2F2-66E6-4711-8B26-11032E105F5A}|Consultorio-Medico\\Consultorio-Medico.csproj|c:\\users\\educacion\\documents\\github\\consultorio-windows-forms\\consultorio-medico\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17E0E2F2-66E6-4711-8B26-11032E105F5A}|Consultorio-Medico\\Consultorio-Medico.csproj|c:\\users\\agustin\\documents\\github\\consultorio-windows-forms\\consultorio-medico\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17E0E2F2-66E6-4711-8B26-11032E105F5A}|Consultorio-Medico\\Consultorio-Medico.csproj|solutionrelative:consultorio-medico\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17E0E2F2-66E6-4711-8B26-11032E105F5A}|Consultorio-Medico\\Consultorio-Medico.csproj|c:\\users\\educacion\\documents\\github\\consultorio-windows-forms\\consultorio-medico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17E0E2F2-66E6-4711-8B26-11032E105F5A}|Consultorio-Medico\\Consultorio-Medico.csproj|c:\\users\\agustin\\documents\\github\\consultorio-windows-forms\\consultorio-medico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17E0E2F2-66E6-4711-8B26-11032E105F5A}|Consultorio-Medico\\Consultorio-Medico.csproj|solutionrelative:consultorio-medico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17E0E2F2-66E6-4711-8B26-11032E105F5A}|Consultorio-Medico\\Consultorio-Medico.csproj|C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\consultorio-medico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{17E0E2F2-66E6-4711-8B26-11032E105F5A}|Consultorio-Medico\\Consultorio-Medico.csproj|C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\consultorio-medico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{17E0E2F2-66E6-4711-8B26-11032E105F5A}|Consultorio-Medico\\Consultorio-Medico.csproj|solutionrelative:consultorio-medico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -54,15 +54,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Entidades",
-              "DocumentMoniker": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
+              "DocumentMoniker": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
               "RelativeDocumentMoniker": "Entidades\\Entidades.csproj",
-              "ToolTip": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
+              "ToolTip": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
               "RelativeToolTip": "Entidades\\Entidades.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-11-07T00:46:36.796Z",
@@ -71,55 +71,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Entidades",
-              "DocumentMoniker": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
+              "Title": "Entidades.csproj",
+              "DocumentMoniker": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
               "RelativeDocumentMoniker": "Entidades\\Entidades.csproj",
-              "ToolTip": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
+              "ToolTip": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Entidades.csproj",
               "RelativeToolTip": "Entidades\\Entidades.csproj",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAIBJwA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-11-07T00:45:47.827Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Base.cs",
-              "DocumentMoniker": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\CapaDatos\\Base.cs",
+              "DocumentMoniker": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\CapaDatos\\Base.cs",
               "RelativeDocumentMoniker": "CapaDatos\\Base.cs",
-              "ToolTip": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\CapaDatos\\Base.cs",
+              "ToolTip": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\CapaDatos\\Base.cs",
               "RelativeToolTip": "CapaDatos\\Base.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAACQAAABOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T00:17:12.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Medico.cs",
-              "DocumentMoniker": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Medico.cs",
+              "DocumentMoniker": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Medico.cs",
               "RelativeDocumentMoniker": "Entidades\\Medico.cs",
-              "ToolTip": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Medico.cs",
+              "ToolTip": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Medico.cs",
               "RelativeToolTip": "Entidades\\Medico.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA1wAQAAAAdAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwAQAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T19:04:53.992Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Especialidad.cs",
-              "DocumentMoniker": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Especialidad.cs",
+              "DocumentMoniker": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Especialidad.cs",
               "RelativeDocumentMoniker": "Entidades\\Especialidad.cs",
-              "ToolTip": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Especialidad.cs",
+              "ToolTip": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Especialidad.cs",
               "RelativeToolTip": "Entidades\\Especialidad.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAABCAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwAwAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T19:04:48.297Z",
               "EditorCaption": ""
@@ -128,23 +124,24 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Paciente.cs",
-              "DocumentMoniker": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Paciente.cs",
+              "DocumentMoniker": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Paciente.cs",
               "RelativeDocumentMoniker": "Entidades\\Paciente.cs",
-              "ToolTip": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Paciente.cs",
+              "ToolTip": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Paciente.cs",
               "RelativeToolTip": "Entidades\\Paciente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T19:04:18.017Z"
+              "WhenOpened": "2024-11-04T19:04:18.017Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CapaDatos.csproj",
-              "DocumentMoniker": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj",
+              "DocumentMoniker": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj",
               "RelativeDocumentMoniker": "CapaDatos\\CapaDatos.csproj",
-              "ToolTip": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj",
+              "ToolTip": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\CapaDatos\\CapaDatos.csproj",
               "RelativeToolTip": "CapaDatos\\CapaDatos.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-11-04T03:47:19.766Z",
               "EditorCaption": ""
@@ -153,21 +150,22 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Persona.cs",
-              "DocumentMoniker": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Persona.cs",
+              "DocumentMoniker": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Persona.cs",
               "RelativeDocumentMoniker": "Entidades\\Persona.cs",
-              "ToolTip": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Persona.cs",
+              "ToolTip": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Entidades\\Persona.cs",
               "RelativeToolTip": "Entidades\\Persona.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T03:47:54.063Z"
+              "WhenOpened": "2024-11-04T03:47:54.063Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Consultorio-Medico\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Form1.Designer.cs",
               "RelativeToolTip": "Consultorio-Medico\\Form1.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -178,9 +176,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Form1.cs",
               "RelativeDocumentMoniker": "Consultorio-Medico\\Form1.cs",
-              "ToolTip": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Form1.cs",
+              "ToolTip": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Form1.cs",
               "RelativeToolTip": "Consultorio-Medico\\Form1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -191,23 +189,13 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Form1.cs",
               "RelativeDocumentMoniker": "Consultorio-Medico\\Form1.cs",
-              "ToolTip": "C:\\Users\\Educacion\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\AGUSTIN\\Documents\\GitHub\\consultorio-windows-forms\\Consultorio-Medico\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "Consultorio-Medico\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T22:08:04.902Z",
               "EditorCaption": " [Dise\u00F1o]"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 338,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
