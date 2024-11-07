@@ -56,9 +56,9 @@ namespace Consultorio_Medico
 
         private void button1_Click(object sender, EventArgs e)
         {
-            List<Paciente> Pacientes = DataPaciente.VerPacientes();
+            //List<Paciente> Pacientes = DataPaciente.VerPacientes();
             // Crea una instancia del nuevo formulario (Form2)
-            Form2 nuevoFormulario = new Form2(Pacientes);
+            Form2 nuevoFormulario = new Form2();
             // Mostrar el nuevo formulario. 
             nuevoFormulario.ShowDialog();
             //muestra los datos del cliente seleccionado en la panatalla form2 para ser udados en vistos en esta

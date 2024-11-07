@@ -33,6 +33,7 @@
             listBoxDatosPacienteform2 = new ListBox();
             Siguiente = new Button();
             botoncrearPaciente = new Button();
+            buttonEditarpac = new Button();
             SuspendLayout();
             // 
             // comboBoxPacientesform2
@@ -43,6 +44,7 @@
             comboBoxPacientesform2.Size = new Size(271, 23);
             comboBoxPacientesform2.TabIndex = 0;
             comboBoxPacientesform2.SelectedIndexChanged += comboBoxPacientesform2_SelectedIndexChanged;
+            comboBoxPacientesform2.Click += comboBoxPacientesform2_Click;
             // 
             // label1
             // 
@@ -84,11 +86,23 @@
             botoncrearPaciente.UseVisualStyleBackColor = true;
             botoncrearPaciente.Click += botoncrearPaciente_Click;
             // 
+            // buttonEditarpac
+            // 
+            buttonEditarpac.Location = new Point(495, 124);
+            buttonEditarpac.Name = "buttonEditarpac";
+            buttonEditarpac.Size = new Size(221, 36);
+            buttonEditarpac.TabIndex = 5;
+            buttonEditarpac.Text = "Editar Paciente";
+            buttonEditarpac.UseVisualStyleBackColor = true;
+            buttonEditarpac.Click += buttonEditarpac_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonEditarpac);
             Controls.Add(botoncrearPaciente);
             Controls.Add(Siguiente);
             Controls.Add(listBoxDatosPacienteform2);
@@ -107,5 +121,6 @@
         private ListBox listBoxDatosPacienteform2;
         private Button Siguiente;
         private Button botoncrearPaciente;
+        private Button buttonEditarpac;
     }
 }
