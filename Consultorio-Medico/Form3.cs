@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -60,6 +61,15 @@ namespace Consultorio_Medico
 
         private void buttonCrearpaciente_Click(object sender, EventArgs e)
         {
+            Paciente Creapaciente = new Paciente();
+            Creapaciente.Nombre= textBoxnombre.Text;
+            Creapaciente.Apellido= textBoxapellido.Text;
+            Creapaciente.DNI= textBoxdni.Text;
+            Creapaciente.FechaNacimiento = Convert.ToDateTime(dateTimePickerFechNaci.Text);
+            Creapaciente.HistoriaClinica= textBoxHisclin.Text;
+            Creapaciente.Telefono=textBoxtel.Text;
+            Creapaciente.TelefonoFijo= textBoxtelfijo.Text;
+            Creapaciente.Notas= textBoxnotas.Text; 
 
         }
 
