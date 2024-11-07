@@ -41,7 +41,7 @@
             // comboBoxEspecialidades
             // 
             comboBoxEspecialidades.FormattingEnabled = true;
-            comboBoxEspecialidades.Location = new Point(30, 101);
+            comboBoxEspecialidades.Location = new Point(45, 133);
             comboBoxEspecialidades.Name = "comboBoxEspecialidades";
             comboBoxEspecialidades.Size = new Size(268, 23);
             comboBoxEspecialidades.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(30, 83);
+            label1.Location = new Point(45, 115);
             label1.Name = "label1";
             label1.Size = new Size(85, 15);
             label1.TabIndex = 1;
@@ -62,7 +62,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(30, 193);
+            label2.Location = new Point(45, 245);
             label2.Name = "label2";
             label2.Size = new Size(53, 15);
             label2.TabIndex = 2;
@@ -72,7 +72,7 @@
             // comboBoxMedicos
             // 
             comboBoxMedicos.FormattingEnabled = true;
-            comboBoxMedicos.Location = new Point(30, 211);
+            comboBoxMedicos.Location = new Point(45, 263);
             comboBoxMedicos.Name = "comboBoxMedicos";
             comboBoxMedicos.Size = new Size(268, 23);
             comboBoxMedicos.TabIndex = 3;
@@ -91,17 +91,18 @@
             // 
             // listViewDatosPacientes
             // 
-            listViewDatosPacientes.Location = new Point(464, 133);
+            listViewDatosPacientes.Location = new Point(464, 124);
             listViewDatosPacientes.Name = "listViewDatosPacientes";
-            listViewDatosPacientes.Size = new Size(228, 111);
+            listViewDatosPacientes.Size = new Size(228, 180);
             listViewDatosPacientes.TabIndex = 5;
             listViewDatosPacientes.UseCompatibleStateImageBehavior = false;
+            listViewDatosPacientes.View = View.List;
             listViewDatosPacientes.SelectedIndexChanged += listViewDatosPacientes_SelectedIndexChanged;
             // 
             // button2
             // 
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(266, 331);
+            button2.Location = new Point(266, 366);
             button2.Name = "button2";
             button2.Size = new Size(228, 23);
             button2.TabIndex = 6;
