@@ -52,9 +52,9 @@ namespace Consultorio_Medico
 
         private void comboBoxMedicos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var medicoId = Convert.ToSByte(comboBoxMedicos.SelectedItem.ToString().Split(' ')[0]);
-            DatosMedicoSeleccionado=DataMedico.
-
+            sbyte medicoId = Convert.ToSByte(comboBoxMedicos.SelectedItem.ToString().Split(' ')[0]);
+            DatosMedicoSeleccionado = DataMedico.VerMedico(medicoId);
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
