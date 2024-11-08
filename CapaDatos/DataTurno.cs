@@ -126,5 +126,39 @@ namespace CapaDatos
                 }
             }
         }
+
+        public static void CancelarTurno(int idTurno)
+        {
+            using (SqlConnection conexion = new SqlConnection(StringConnection.StrConnection))
+            {
+                string query = "UPDATE Appointments SET canceled = @Canceled WHERE appointmentID = @AppointmentID";
+                using (SqlCommand comando = new SqlCommand(query, conexion))
+                {
+                    comando.Parameters.AddWithValue("@Canceled", true);
+                    comando.Parameters.AddWithValue("@AppointmentID", idTurno);
+
+                    conexion.Open();
+                    comando.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public static void EditarTurno(int idTurno, string estado)
+        {
+            using (SqlConnection conexion = new SqlConnection(StringConnection.StrConnection))
+            {
+                string query = "UPDATE Appointments SET status = @Status WHERE appointmentID = @AppointmentID";
+                using (SqlCommand comando = new SqlCommand(query, conexion))
+                {
+                    comando.Parameters.AddWithValue("@Status", estado);
+                    comando.Parameters.AddWithValue("@AppointmentID", idTurno);
+
+                    conexion.Open();
+                    comando.ExecuteNonQuery();
+                }
+            }
+        }
+
+
     }
 }
