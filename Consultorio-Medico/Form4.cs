@@ -45,20 +45,26 @@ namespace Consultorio_Medico
 
         private void buttonEditarpaciente_Click(object sender, EventArgs e)
         {
-            Paciente PacienteEditado= new Paciente();
-            PacienteEditado.IdPaciente=Datospacient.IdPaciente;
-            PacienteEditado.Nombre=textBoxnombre.Text;
-            PacienteEditado.Apellido=textBoxapellido.Text;
-            PacienteEditado.DNI=textBoxdni.Text;
-            PacienteEditado.FechaNacimiento= dateTimePickerFechNaci.Value;
-            PacienteEditado.HistoriaClinica=textBoxHisclin.Text;
-            PacienteEditado.Notas=textBoxnotas.Text;
-            PacienteEditado.Telefono=textBoxtel.Text;   
-            PacienteEditado.TelefonoFijo=textBoxtelfijo.Text;
+            Paciente PacienteEditado = new Paciente();
+            PacienteEditado.IdPaciente = Datospacient.IdPaciente;
+            PacienteEditado.Nombre = textBoxnombre.Text;
+            PacienteEditado.Apellido = textBoxapellido.Text;
+            PacienteEditado.DNI = textBoxdni.Text;
+            PacienteEditado.FechaNacimiento = dateTimePickerFechNaci.Value;
+            PacienteEditado.HistoriaClinica = textBoxHisclin.Text;
+            PacienteEditado.Notas = textBoxnotas.Text;
+            PacienteEditado.Telefono = textBoxtel.Text;
+            PacienteEditado.TelefonoFijo = textBoxtelfijo.Text;
             DataPaciente.EditarPaciente(PacienteEditado);
             this.DialogResult = DialogResult.OK;
             this.Close();
 
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
     }
 }
