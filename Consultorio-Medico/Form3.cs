@@ -78,6 +78,7 @@ namespace Consultorio_Medico
             Creapaciente.Notas= textBoxnotas.Text;
             Creapaciente.Estado = "True";
             DataPaciente.CrearPaciente( Creapaciente );
+            MessageBox.Show("Paciente Creado");
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

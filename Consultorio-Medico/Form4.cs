@@ -64,6 +64,7 @@ namespace Consultorio_Medico
             PacienteEditado.Telefono = textBoxtel.Text;
             PacienteEditado.TelefonoFijo = textBoxtelfijo.Text;
             DataPaciente.EditarPaciente(PacienteEditado);
+            MessageBox.Show("Paciente Editado");
             this.DialogResult = DialogResult.OK;
             this.Close();
 

@@ -87,12 +87,15 @@ namespace Consultorio_Medico
             DateTime fecha = new DateTime(monthCalendar1.SelectionStart.Year, monthCalendar1.SelectionStart.Month, monthCalendar1.SelectionStart.Day);
             string horarioselec = comboBox1.SelectedItem.ToString();
             TimeSpan hora = TimeSpan.Parse(horarioselec);
-            fecha.Date.Add(hora);
+            DateTime fechahora = fecha.Date.Add(hora);
             Turno nuevoturno=new Turno();
             nuevoturno.IdPaciente = DatoPaciente.IdPaciente;
             nuevoturno.IdMedico = DatoMedico.IdMedico;
-            nuevoturno.Fecha = fecha;
+            nuevoturno.Fecha = fechahora;
             DataTurno.CrearTurno(nuevoturno);
+            MessageBox.Show("Turno Generado");
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         private void buttoncancelarTurno_Click(object sender, EventArgs e)

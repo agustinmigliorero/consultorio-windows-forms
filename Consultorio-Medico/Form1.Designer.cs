@@ -40,6 +40,7 @@
             // 
             // comboBoxEspecialidades
             // 
+            comboBoxEspecialidades.BackColor = Color.FromArgb(255, 224, 192);
             comboBoxEspecialidades.FormattingEnabled = true;
             comboBoxEspecialidades.Location = new Point(45, 133);
             comboBoxEspecialidades.Name = "comboBoxEspecialidades";
@@ -71,6 +72,7 @@
             // 
             // comboBoxMedicos
             // 
+            comboBoxMedicos.BackColor = Color.FromArgb(255, 224, 192);
             comboBoxMedicos.FormattingEnabled = true;
             comboBoxMedicos.Location = new Point(45, 263);
             comboBoxMedicos.Name = "comboBoxMedicos";

@@ -90,5 +90,10 @@ namespace Consultorio_Medico
             Form4 nuevoFormulario = new Form4(Datospaciente);
             nuevoFormulario.ShowDialog();
         }
+
+        private void buttonmodifcarestado_Click(object sender, EventArgs e)
+        {
+            DataPaciente.EditarEstadoPaciente(Datospaciente.IdPaciente, !Convert.ToBoolean(Datospaciente.Estado));
+        }
     }
 }

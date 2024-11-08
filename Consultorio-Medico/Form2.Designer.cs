@@ -34,6 +34,7 @@
             Siguiente = new Button();
             botoncrearPaciente = new Button();
             buttonEditarpac = new Button();
+            buttonmodifcarestado = new Button();
             SuspendLayout();
             // 
             // comboBoxPacientesform2
@@ -68,7 +69,7 @@
             // 
             // Siguiente
             // 
-            Siguiente.Location = new Point(333, 323);
+            Siguiente.Location = new Point(121, 317);
             Siguiente.Name = "Siguiente";
             Siguiente.Size = new Size(102, 50);
             Siguiente.TabIndex = 3;
@@ -78,7 +79,7 @@
             // 
             // botoncrearPaciente
             // 
-            botoncrearPaciente.Location = new Point(495, 65);
+            botoncrearPaciente.Location = new Point(480, 109);
             botoncrearPaciente.Name = "botoncrearPaciente";
             botoncrearPaciente.Size = new Size(222, 36);
             botoncrearPaciente.TabIndex = 4;
@@ -88,7 +89,7 @@
             // 
             // buttonEditarpac
             // 
-            buttonEditarpac.Location = new Point(495, 124);
+            buttonEditarpac.Location = new Point(480, 166);
             buttonEditarpac.Name = "buttonEditarpac";
             buttonEditarpac.Size = new Size(221, 36);
             buttonEditarpac.TabIndex = 5;
@@ -96,12 +97,23 @@
             buttonEditarpac.UseVisualStyleBackColor = true;
             buttonEditarpac.Click += buttonEditarpac_Click;
             // 
+            // buttonmodifcarestado
+            // 
+            buttonmodifcarestado.Location = new Point(480, 229);
+            buttonmodifcarestado.Name = "buttonmodifcarestado";
+            buttonmodifcarestado.Size = new Size(221, 36);
+            buttonmodifcarestado.TabIndex = 6;
+            buttonmodifcarestado.Text = "Modificar Estado";
+            buttonmodifcarestado.UseVisualStyleBackColor = true;
+            buttonmodifcarestado.Click += buttonmodifcarestado_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonmodifcarestado);
             Controls.Add(buttonEditarpac);
             Controls.Add(botoncrearPaciente);
             Controls.Add(Siguiente);
@@ -122,5 +134,6 @@
         private Button Siguiente;
         private Button botoncrearPaciente;
         private Button buttonEditarpac;
+        private Button buttonmodifcarestado;
     }
 }
