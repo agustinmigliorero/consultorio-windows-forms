@@ -49,6 +49,7 @@
             buttonCancelar.TabIndex = 24;
             buttonCancelar.Text = "Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // buttonEditarpaciente
             // 

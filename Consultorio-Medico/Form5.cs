@@ -98,7 +98,8 @@ namespace Consultorio_Medico
 
         private void buttoncancelarTurno_Click(object sender, EventArgs e)
         {
-
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         private void labelHistorialturno_Click(object sender, EventArgs e)
