@@ -106,5 +106,25 @@ namespace CapaDatos
             }
             return turnos;
         }
+
+        public static void CrearTurno(Turno turno)
+        {
+            using (SqlConnection conexion = new SqlConnection(StringConnection.StrConnection))
+            {
+                string query = "INSERT INTO Appointments (patientId, professionalId, dateTime, canceled, status) " +
+                               "VALUES (@PatientId, @ProfessionalId, @DateTime, @Canceled, @Status)";
+                using (SqlCommand comando = new SqlCommand(query, conexion))
+                {
+                    comando.Parameters.AddWithValue("@PatientId", turno.IdPaciente);
+                    comando.Parameters.AddWithValue("@ProfessionalId", turno.IdMedico);
+                    comando.Parameters.AddWithValue("@DateTime", turno.Fecha);
+                    comando.Parameters.AddWithValue("@Canceled", false);
+                    comando.Parameters.AddWithValue("@Status", "Pending");
+
+                    conexion.Open();
+                    comando.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }

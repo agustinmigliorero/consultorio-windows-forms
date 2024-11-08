@@ -18,7 +18,7 @@ namespace Entidades
         public Turno() { }
 
         
-        public Turno(int idTurno, int idPaciente, int idMedico, DateTime fecha, bool cancelado, string estado)
+        public Turno(int idTurno, int idPaciente, int idMedico, DateTime fecha, bool cancelado = false, string estado = "Pending")
         {
             IdTurno = idTurno;
             IdPaciente = idPaciente;
@@ -27,7 +27,6 @@ namespace Entidades
             Cancelado = cancelado;
             Estado = estado;
         }
-
     }
 }
 
