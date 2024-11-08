@@ -51,8 +51,22 @@ namespace Consultorio_Medico
             DateTime fechaSeleccionada = monthCalendar1.SelectionStart;
             List<Turno> turnosmedico = DataTurno.VerTurnosPorMedicoYFecha(DatoMedico.IdMedico,fechaSeleccionada);
             List<Agenda> horariosmedico = DataAgenda.VerAgenda(DatoMedico.IdMedico);
-            
+
+            HashSet<TimeSpan> horariosOcupados = new HashSet<TimeSpan>();
+
+            foreach (Turno turno in turnosmedico) { 
+                horariosOcupados.Add(turno.Fecha.TimeOfDay); 
+            }
+
             foreach (Agenda horario in horariosmedico)
+            {
+                if (!horariosOcupados.Contains(horario.Horario))
+                {
+                    comboBox1.Items.Add(horario.Horario.ToString(@"hh\:mm"));
+                }
+            }
+
+                /*foreach (Agenda horario in horariosmedico)
             {
                 if (turnosmedico.Count > 0)
                 {
@@ -68,7 +82,7 @@ namespace Consultorio_Medico
                     comboBox1.Items.Add(horario.Horario.ToString());
                 }
                 
-            }
+            }*/
            
         }
 
