@@ -117,7 +117,9 @@ namespace Consultorio_Medico
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+
+        private void buttoneditarturno_Click(object sender, EventArgs e)
         {
 
         }

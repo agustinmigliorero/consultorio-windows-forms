@@ -134,6 +134,7 @@
             buttoneditarturno.TabIndex = 9;
             buttoneditarturno.Text = "Editar Turno";
             buttoneditarturno.UseVisualStyleBackColor = false;
+            buttoneditarturno.Click += buttoneditarturno_Click;
             // 
             // Form5
             // 
