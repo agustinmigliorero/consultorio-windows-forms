@@ -14,33 +14,35 @@ using CapaDatos;
 namespace Consultorio_Medico
 {
     public partial class Form5 : Form
-    { 
+    {
 
-    public Paciente DatoPaciente { get; set; }
-    public Medico DatoMedico { get; set; }
-    public Form5(Paciente DatosPacienteSelecionado, Medico DatosMedicoSeleccionado)
+        public Paciente DatoPaciente { get; set; }
+        public Medico DatoMedico { get; set; }
+        public Form5(Paciente DatosPacienteSelecionado, Medico DatosMedicoSeleccionado)
         {
             InitializeComponent();
-            DatoMedico=DatosMedicoSeleccionado;
-            DatoPaciente=DatosPacienteSelecionado;
+            DatoMedico = DatosMedicoSeleccionado;
+            DatoPaciente = DatosPacienteSelecionado;
         }
 
         private void Form5_Load(object sender, EventArgs e)
         {
-            try {
+            try
+            {
                 List<Turno> HistorialTurnos = DataTurno.VerTurnosPorPaciente(DatoPaciente.IdPaciente);
                 foreach (Turno turno in HistorialTurnos)
                 {
                     Medico medico = DataMedico.VerMedico(Convert.ToSByte(turno.IdMedico));
                     listView2.Items.Add(turno.Fecha.ToString() + " " + medico.NombreCompleto);
                 }
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Antes debes elegir un paciente");
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
-            
+
         }
 
         private void labelHoraDispo_Click(object sender, EventArgs e)
@@ -57,13 +59,14 @@ namespace Consultorio_Medico
         {
             comboBox1.Items.Clear();
             DateTime fechaSeleccionada = monthCalendar1.SelectionStart;
-            List<Turno> turnosmedico = DataTurno.VerTurnosPorMedicoYFecha(DatoMedico.IdMedico,fechaSeleccionada);
+            List<Turno> turnosmedico = DataTurno.VerTurnosPorMedicoYFecha(DatoMedico.IdMedico, fechaSeleccionada);
             List<Agenda> horariosmedico = DataAgenda.VerAgenda(DatoMedico.IdMedico);
 
             HashSet<TimeSpan> horariosOcupados = new HashSet<TimeSpan>();
 
-            foreach (Turno turno in turnosmedico) { 
-                horariosOcupados.Add(turno.Fecha.TimeOfDay); 
+            foreach (Turno turno in turnosmedico)
+            {
+                horariosOcupados.Add(turno.Fecha.TimeOfDay);
             }
 
             foreach (Agenda horario in horariosmedico)
@@ -74,7 +77,7 @@ namespace Consultorio_Medico
                 }
             }
 
-           
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -88,7 +91,7 @@ namespace Consultorio_Medico
             string horarioselec = comboBox1.SelectedItem.ToString();
             TimeSpan hora = TimeSpan.Parse(horarioselec);
             DateTime fechahora = fecha.Date.Add(hora);
-            Turno nuevoturno=new Turno();
+            Turno nuevoturno = new Turno();
             nuevoturno.IdPaciente = DatoPaciente.IdPaciente;
             nuevoturno.IdMedico = DatoMedico.IdMedico;
             nuevoturno.Fecha = fechahora;
@@ -110,6 +113,11 @@ namespace Consultorio_Medico
         }
 
         private void listView2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

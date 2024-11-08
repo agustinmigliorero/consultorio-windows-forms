@@ -36,6 +36,7 @@
             buttoncancelarTurno = new Button();
             listView2 = new ListView();
             labelHistorialturno = new Label();
+            buttoneditarturno = new Button();
             SuspendLayout();
             // 
             // monthCalendar1
@@ -47,6 +48,7 @@
             // 
             // comboBox1
             // 
+            comboBox1.BackColor = SystemColors.MenuBar;
             comboBox1.FormattingEnabled = true;
             comboBox1.Location = new Point(53, 242);
             comboBox1.Name = "comboBox1";
@@ -57,9 +59,10 @@
             // labelfechaturno
             // 
             labelfechaturno.AutoSize = true;
+            labelfechaturno.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelfechaturno.Location = new Point(70, 12);
             labelfechaturno.Name = "labelfechaturno";
-            labelfechaturno.Size = new Size(72, 15);
+            labelfechaturno.Size = new Size(74, 15);
             labelfechaturno.TabIndex = 2;
             labelfechaturno.Text = "Fecha Turno";
             labelfechaturno.Click += labelfechaturno_Click;
@@ -67,35 +70,41 @@
             // labelHoraDispo
             // 
             labelHoraDispo.AutoSize = true;
+            labelHoraDispo.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelHoraDispo.Location = new Point(53, 224);
             labelHoraDispo.Name = "labelHoraDispo";
-            labelHoraDispo.Size = new Size(116, 15);
+            labelHoraDispo.Size = new Size(120, 15);
             labelHoraDispo.TabIndex = 3;
             labelHoraDispo.Text = "Horarios Disponibles";
             labelHoraDispo.Click += labelHoraDispo_Click;
             // 
             // buttongenerarturno
             // 
-            buttongenerarturno.Location = new Point(53, 319);
+            buttongenerarturno.BackColor = Color.PaleGreen;
+            buttongenerarturno.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttongenerarturno.Location = new Point(28, 319);
             buttongenerarturno.Name = "buttongenerarturno";
             buttongenerarturno.Size = new Size(106, 23);
             buttongenerarturno.TabIndex = 4;
             buttongenerarturno.Text = "Generar Turno";
-            buttongenerarturno.UseVisualStyleBackColor = true;
+            buttongenerarturno.UseVisualStyleBackColor = false;
             buttongenerarturno.Click += buttongenerarturno_Click;
             // 
             // buttoncancelarTurno
             // 
-            buttoncancelarTurno.Location = new Point(221, 319);
+            buttoncancelarTurno.BackColor = Color.Salmon;
+            buttoncancelarTurno.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttoncancelarTurno.Location = new Point(275, 319);
             buttoncancelarTurno.Name = "buttoncancelarTurno";
             buttoncancelarTurno.Size = new Size(110, 23);
             buttoncancelarTurno.TabIndex = 5;
             buttoncancelarTurno.Text = "Cancelar Turno";
-            buttoncancelarTurno.UseVisualStyleBackColor = true;
+            buttoncancelarTurno.UseVisualStyleBackColor = false;
             buttoncancelarTurno.Click += buttoncancelarTurno_Click;
             // 
             // listView2
             // 
+            listView2.BackColor = SystemColors.ControlLight;
             listView2.Location = new Point(454, 36);
             listView2.Name = "listView2";
             listView2.Size = new Size(307, 306);
@@ -107,12 +116,24 @@
             // labelHistorialturno
             // 
             labelHistorialturno.AutoSize = true;
+            labelHistorialturno.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelHistorialturno.Location = new Point(454, 12);
             labelHistorialturno.Name = "labelHistorialturno";
-            labelHistorialturno.Size = new Size(106, 15);
+            labelHistorialturno.Size = new Size(110, 15);
             labelHistorialturno.TabIndex = 8;
             labelHistorialturno.Text = "Historial de Turnos";
             labelHistorialturno.Click += labelHistorialturno_Click;
+            // 
+            // buttoneditarturno
+            // 
+            buttoneditarturno.BackColor = Color.Pink;
+            buttoneditarturno.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttoneditarturno.Location = new Point(150, 319);
+            buttoneditarturno.Name = "buttoneditarturno";
+            buttoneditarturno.Size = new Size(110, 23);
+            buttoneditarturno.TabIndex = 9;
+            buttoneditarturno.Text = "Editar Turno";
+            buttoneditarturno.UseVisualStyleBackColor = false;
             // 
             // Form5
             // 
@@ -120,6 +141,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttoneditarturno);
             Controls.Add(labelHistorialturno);
             Controls.Add(listView2);
             Controls.Add(buttoncancelarTurno);
@@ -145,5 +167,6 @@
         private Button buttoncancelarTurno;
         private ListView listView2;
         private Label labelHistorialturno;
+        private Button buttoneditarturno;
     }
 }

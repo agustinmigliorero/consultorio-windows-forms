@@ -95,5 +95,10 @@ namespace Consultorio_Medico
         {
             DataPaciente.EditarEstadoPaciente(Datospaciente.IdPaciente, !Convert.ToBoolean(Datospaciente.Estado));
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

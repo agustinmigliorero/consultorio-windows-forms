@@ -69,7 +69,6 @@ namespace Consultorio_Medico
             {
                 DatosPacienteSelecionado = nuevoFormulario.Datospaciente;
                 listViewDatosPacientes.Items.Clear();
-                listViewDatosPacientes.Items.Add(nuevoFormulario.Datospaciente.IdPaciente.ToString());
                 listViewDatosPacientes.Items.Add("Apellido y Nombre: " + DatosPacienteSelecionado.NombreCompleto);
                 listViewDatosPacientes.Items.Add("DNI: " + DatosPacienteSelecionado.DNI);
                 listViewDatosPacientes.Items.Add("MRN: " + DatosPacienteSelecionado.HistoriaClinica);

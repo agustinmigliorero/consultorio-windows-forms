@@ -43,22 +43,24 @@
             // 
             // buttonCancelar
             // 
+            buttonCancelar.BackColor = Color.Salmon;
             buttonCancelar.Location = new Point(428, 376);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(112, 31);
             buttonCancelar.TabIndex = 24;
             buttonCancelar.Text = "Cancelar";
-            buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += buttonCancelar_Click;
             // 
             // buttonEditarpaciente
             // 
+            buttonEditarpaciente.BackColor = Color.LightPink;
             buttonEditarpaciente.Location = new Point(265, 376);
             buttonEditarpaciente.Name = "buttonEditarpaciente";
             buttonEditarpaciente.Size = new Size(112, 30);
             buttonEditarpaciente.TabIndex = 23;
             buttonEditarpaciente.Text = "Editar";
-            buttonEditarpaciente.UseVisualStyleBackColor = true;
+            buttonEditarpaciente.UseVisualStyleBackColor = false;
             buttonEditarpaciente.Click += buttonEditarpaciente_Click;
             // 
             // label1
@@ -140,6 +142,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(buttonCancelar);
             Controls.Add(buttonEditarpaciente);

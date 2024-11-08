@@ -39,6 +39,7 @@
             // 
             // comboBoxPacientesform2
             // 
+            comboBoxPacientesform2.BackColor = Color.FromArgb(192, 255, 255);
             comboBoxPacientesform2.FormattingEnabled = true;
             comboBoxPacientesform2.Location = new Point(29, 58);
             comboBoxPacientesform2.Name = "comboBoxPacientesform2";
@@ -50,15 +51,17 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(29, 40);
+            label1.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(29, 32);
             label1.Name = "label1";
-            label1.Size = new Size(57, 15);
+            label1.Size = new Size(84, 21);
             label1.TabIndex = 1;
             label1.Text = "Pacientes";
             label1.Click += label1_Click;
             // 
             // listBoxDatosPacienteform2
             // 
+            listBoxDatosPacienteform2.BackColor = Color.FromArgb(192, 255, 255);
             listBoxDatosPacienteform2.FormattingEnabled = true;
             listBoxDatosPacienteform2.ItemHeight = 15;
             listBoxDatosPacienteform2.Location = new Point(29, 109);
@@ -69,42 +72,50 @@
             // 
             // Siguiente
             // 
-            Siguiente.Location = new Point(121, 317);
+            Siguiente.BackColor = Color.LightSeaGreen;
+            Siguiente.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Siguiente.Location = new Point(339, 313);
             Siguiente.Name = "Siguiente";
             Siguiente.Size = new Size(102, 50);
             Siguiente.TabIndex = 3;
             Siguiente.Text = "Siguiente";
-            Siguiente.UseVisualStyleBackColor = true;
+            Siguiente.UseVisualStyleBackColor = false;
             Siguiente.Click += Siguiente_Click;
             // 
             // botoncrearPaciente
             // 
-            botoncrearPaciente.Location = new Point(480, 109);
+            botoncrearPaciente.BackColor = Color.GreenYellow;
+            botoncrearPaciente.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            botoncrearPaciente.Location = new Point(487, 74);
             botoncrearPaciente.Name = "botoncrearPaciente";
             botoncrearPaciente.Size = new Size(222, 36);
             botoncrearPaciente.TabIndex = 4;
             botoncrearPaciente.Text = "Crear Paciente";
-            botoncrearPaciente.UseVisualStyleBackColor = true;
+            botoncrearPaciente.UseVisualStyleBackColor = false;
             botoncrearPaciente.Click += botoncrearPaciente_Click;
             // 
             // buttonEditarpac
             // 
-            buttonEditarpac.Location = new Point(480, 166);
+            buttonEditarpac.BackColor = Color.Aquamarine;
+            buttonEditarpac.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonEditarpac.Location = new Point(487, 131);
             buttonEditarpac.Name = "buttonEditarpac";
             buttonEditarpac.Size = new Size(221, 36);
             buttonEditarpac.TabIndex = 5;
             buttonEditarpac.Text = "Editar Paciente";
-            buttonEditarpac.UseVisualStyleBackColor = true;
+            buttonEditarpac.UseVisualStyleBackColor = false;
             buttonEditarpac.Click += buttonEditarpac_Click;
             // 
             // buttonmodifcarestado
             // 
-            buttonmodifcarestado.Location = new Point(480, 229);
+            buttonmodifcarestado.BackColor = Color.Salmon;
+            buttonmodifcarestado.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonmodifcarestado.Location = new Point(487, 194);
             buttonmodifcarestado.Name = "buttonmodifcarestado";
             buttonmodifcarestado.Size = new Size(221, 36);
             buttonmodifcarestado.TabIndex = 6;
             buttonmodifcarestado.Text = "Modificar Estado";
-            buttonmodifcarestado.UseVisualStyleBackColor = true;
+            buttonmodifcarestado.UseVisualStyleBackColor = false;
             buttonmodifcarestado.Click += buttonmodifcarestado_Click;
             // 
             // Form2
@@ -122,6 +133,7 @@
             Controls.Add(comboBoxPacientesform2);
             Name = "Form2";
             Text = "Form2";
+            Load += Form2_Load;
             ResumeLayout(false);
             PerformLayout();
         }
