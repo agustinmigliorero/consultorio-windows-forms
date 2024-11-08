@@ -114,7 +114,7 @@ namespace CapaDatos
                 using (SqlCommand comando = new SqlCommand(query, conexion))
                 {
                     comando.Parameters.AddWithValue("@PatientId", idPaciente);
-                    comando.Parameters.AddWithValue("@Status", nuevoEstado ? 1 : 0);
+                    comando.Parameters.AddWithValue("@Status", nuevoEstado);
 
                     conexion.Open();
                     comando.ExecuteNonQuery();

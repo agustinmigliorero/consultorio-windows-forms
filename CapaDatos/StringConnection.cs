@@ -10,8 +10,7 @@ namespace CapaDatos
     {
 
        //public static string StrConnection = "Server=Agus-PC;Database=Clinic;User Id=sa;Password=1234;TrustServerCertificate=True;";
-       
-        
+
        public static string StrConnection = "Server=NOTEBOOK-FACU;Database=Clinic;User Id=sa;Password=1234;TrustServerCertificate=True;";
     }
 }
