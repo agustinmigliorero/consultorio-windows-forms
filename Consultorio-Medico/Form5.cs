@@ -27,12 +27,20 @@ namespace Consultorio_Medico
 
         private void Form5_Load(object sender, EventArgs e)
         {
-            List<Turno> HistorialTurnos= DataTurno.VerTurnosPorPaciente(DatoPaciente.IdPaciente);
-            foreach (Turno turno in HistorialTurnos)
+            try {
+                List<Turno> HistorialTurnos = DataTurno.VerTurnosPorPaciente(DatoPaciente.IdPaciente);
+                foreach (Turno turno in HistorialTurnos)
+                {
+                    Medico medico = DataMedico.VerMedico(Convert.ToSByte(turno.IdMedico));
+                    listView2.Items.Add(turno.Fecha.ToString() + " " + medico.NombreCompleto);
+                }
+            } catch (Exception ex)
             {
-                Medico medico = DataMedico.VerMedico(Convert.ToSByte(turno.IdMedico));
-                listView2.Items.Add(turno.Fecha.ToString()+" "+medico.NombreCompleto);
+                MessageBox.Show("Antes debes elegir un paciente");
+                this.DialogResult = DialogResult.OK;
+                this.Close();
             }
+            
         }
 
         private void labelHoraDispo_Click(object sender, EventArgs e)
@@ -66,7 +74,6 @@ namespace Consultorio_Medico
                 }
             }
 
-            
            
         }
 

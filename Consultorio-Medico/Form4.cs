@@ -23,14 +23,22 @@ namespace Consultorio_Medico
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            textBoxnombre.Text = Datospacient.Nombre;
-            textBoxapellido.Text = Datospacient.Apellido;
-            textBoxdni.Text = Datospacient.DNI;
-            textBoxHisclin.Text = Datospacient.HistoriaClinica;
-            textBoxnotas.Text = Datospacient.Notas;
-            textBoxtel.Text = Datospacient.Telefono;
-            textBoxtelfijo.Text = Datospacient.TelefonoFijo;
-            dateTimePickerFechNaci.Value = Convert.ToDateTime(Datospacient.FechaNacimiento);
+            try {
+                textBoxnombre.Text = Datospacient.Nombre;
+                textBoxapellido.Text = Datospacient.Apellido;
+                textBoxdni.Text = Datospacient.DNI;
+                textBoxHisclin.Text = Datospacient.HistoriaClinica;
+                textBoxnotas.Text = Datospacient.Notas;
+                textBoxtel.Text = Datospacient.Telefono;
+                textBoxtelfijo.Text = Datospacient.TelefonoFijo;
+                dateTimePickerFechNaci.Value = Convert.ToDateTime(Datospacient.FechaNacimiento);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Antes debes elegir un paciente para editar");
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
         }
 
         private void textBoxnombre_TextChanged(object sender, EventArgs e)
