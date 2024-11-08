@@ -80,17 +80,19 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.FromArgb(192, 255, 255);
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.Location = new Point(464, 75);
             button1.Name = "button1";
             button1.Size = new Size(228, 23);
             button1.TabIndex = 4;
             button1.Text = "Buscar Paciente";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // listViewDatosPacientes
             // 
+            listViewDatosPacientes.BackColor = Color.FromArgb(255, 224, 192);
             listViewDatosPacientes.Location = new Point(464, 124);
             listViewDatosPacientes.Name = "listViewDatosPacientes";
             listViewDatosPacientes.Size = new Size(228, 180);
@@ -101,13 +103,14 @@
             // 
             // button2
             // 
+            button2.BackColor = Color.FromArgb(192, 255, 255);
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(266, 366);
+            button2.Location = new Point(266, 360);
             button2.Name = "button2";
-            button2.Size = new Size(228, 23);
+            button2.Size = new Size(228, 32);
             button2.TabIndex = 6;
             button2.Text = "Turnos";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // label3
