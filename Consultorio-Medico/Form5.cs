@@ -66,23 +66,7 @@ namespace Consultorio_Medico
                 }
             }
 
-                /*foreach (Agenda horario in horariosmedico)
-            {
-                if (turnosmedico.Count > 0)
-                {
-                    foreach (Turno turno in turnosmedico)
-                    {
-                        if (turno.Fecha.TimeOfDay != horario.Horario)
-                        {
-                            comboBox1.Items.Add(horario.Horario.ToString());
-                        }
-                    }
-                } else
-                {
-                    comboBox1.Items.Add(horario.Horario.ToString());
-                }
-                
-            }*/
+            
            
         }
 
@@ -93,7 +77,15 @@ namespace Consultorio_Medico
 
         private void buttongenerarturno_Click(object sender, EventArgs e)
         {
-
+            DateTime fecha = new DateTime(monthCalendar1.SelectionStart.Year, monthCalendar1.SelectionStart.Month, monthCalendar1.SelectionStart.Day);
+            string horarioselec = comboBox1.SelectedItem.ToString();
+            TimeSpan hora = TimeSpan.Parse(horarioselec);
+            fecha.Date.Add(hora);
+            Turno nuevoturno=new Turno();
+            nuevoturno.IdPaciente = DatoPaciente.IdPaciente;
+            nuevoturno.IdMedico = DatoMedico.IdMedico;
+            nuevoturno.Fecha = fecha;
+            DataTurno.CrearTurno(nuevoturno);
         }
 
         private void buttoncancelarTurno_Click(object sender, EventArgs e)
