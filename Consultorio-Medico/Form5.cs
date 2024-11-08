@@ -31,7 +31,7 @@ namespace Consultorio_Medico
             foreach (Turno turno in HistorialTurnos)
             {
                 Medico medico = DataMedico.VerMedico(Convert.ToSByte(turno.IdMedico));
-                listView2.Items.Add(turno.Fecha.ToString()+medico.NombreCompleto);
+                listView2.Items.Add(turno.Fecha.ToString()+" "+medico.NombreCompleto);
             }
         }
 
@@ -47,7 +47,20 @@ namespace Consultorio_Medico
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
-
+            DateTime fechaSeleccionada = monthCalendar1.SelectionRange.Start;
+            List<Turno> turnosmedico = DataTurno.VerTurnosPorMedico(DatoMedico.IdMedico);
+            //fechaSeleccionada.DayOfWeek
+            foreach(Turno turno in turnosmedico)
+            {
+                turno.Fecha.da
+            }
+            turnosmedico[0].Fecha.DayOfWeek;
+            List<Agenda> horariosmedico=DataAgenda.VerAgenda(DatoMedico.IdMedico);
+            foreach (Agenda horario in horariosmedico)
+            {
+                
+                comboBox1.Items.Add(horario.Horario.ToString());
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

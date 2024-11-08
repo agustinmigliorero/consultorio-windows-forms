@@ -101,6 +101,7 @@
             listView2.Size = new Size(307, 306);
             listView2.TabIndex = 7;
             listView2.UseCompatibleStateImageBehavior = false;
+            listView2.View = View.List;
             listView2.SelectedIndexChanged += listView2_SelectedIndexChanged;
             // 
             // labelHistorialturno
