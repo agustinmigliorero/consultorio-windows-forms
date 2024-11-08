@@ -48,8 +48,7 @@ namespace CapaDatos
                 paciente.HistoriaClinica = dataReader[6].ToString();
                 paciente.FechaNacimiento = DateTime.Parse(dataReader[7].ToString());
                 paciente.Notas = dataReader[8].ToString();
-                string estadoQuery = dataReader[9].ToString();
-                paciente.Estado = estadoQuery == "1";
+                paciente.Estado = dataReader[9].ToString();
             }
             return paciente;
         }
@@ -71,7 +70,7 @@ namespace CapaDatos
                     comando.Parameters.AddWithValue("@MedicalRecordNumber", nuevoPaciente.HistoriaClinica);
                     comando.Parameters.AddWithValue("@BirthDate", nuevoPaciente.FechaNacimiento);
                     comando.Parameters.AddWithValue("@Notes", nuevoPaciente.Notas);
-                    comando.Parameters.AddWithValue("@Status", nuevoPaciente.Estado ? 1 : 0);
+                    comando.Parameters.AddWithValue("@Status", nuevoPaciente.Estado);
 
                     conexion.Open();
                     comando.ExecuteNonQuery();
@@ -89,7 +88,7 @@ namespace CapaDatos
 
                 using (SqlCommand comando = new SqlCommand(query, conexion))
                 {
-                    comando.Parameters.AddWithValue("@PatientId", paciente.IdPaciente);
+                    comando.Parameters.AddWithValue("@PatientId",Convert.ToInt32(paciente.IdPaciente));
                     comando.Parameters.AddWithValue("@FirstName", paciente.Nombre);
                     comando.Parameters.AddWithValue("@LastName", paciente.Apellido);
                     comando.Parameters.AddWithValue("@DNI", paciente.DNI);
@@ -115,7 +114,7 @@ namespace CapaDatos
                 using (SqlCommand comando = new SqlCommand(query, conexion))
                 {
                     comando.Parameters.AddWithValue("@PatientId", idPaciente);
-                    comando.Parameters.AddWithValue("@Status", nuevoEstado ? 1 : 0);
+                    comando.Parameters.AddWithValue("@Status", nuevoEstado);
 
                     conexion.Open();
                     comando.ExecuteNonQuery();

@@ -26,6 +26,27 @@ namespace CapaDatos
             return medicos;
         }
 
-      }
+        public static Medico VerMedico(SByte idMedico) { 
+            Medico medico = new Medico();
+            SqlConnection conexion = new SqlConnection(StringConnection.StrConnection);
+            conexion.Open();
+            SqlCommand comando = new SqlCommand("SELECT professionalId, firstName, lastName , dni, mobilePhone, email FROM Professionals WHERE professionalId = " + idMedico);
+            comando.Connection = conexion;
+            comando.CommandType = System.Data.CommandType.Text;
+            SqlDataReader dataReader = comando.ExecuteReader();
+            while (dataReader.Read())
+            {
+                medico.IdMedico = Convert.ToSByte(dataReader["professionalId"]);
+                medico.Nombre = dataReader["firstName"].ToString();
+                medico.Apellido = dataReader["lastName"].ToString();
+                medico.DNI = dataReader["dni"].ToString();
+                medico.Telefono = dataReader["mobilePhone"].ToString();
+                medico.Email = dataReader["email"].ToString();
+                
+            }
+            return medico;
+        }
+
+    }
 }
 

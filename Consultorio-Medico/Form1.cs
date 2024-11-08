@@ -6,6 +6,8 @@ namespace Consultorio_Medico
 {
     public partial class Form1 : Form
     {
+        public Paciente DatosPacienteSelecionado { get; set; }
+        public Medico DatosMedicoSeleccionado { get; set; }
         public Form1()
         {
             InitializeComponent();
@@ -50,32 +52,38 @@ namespace Consultorio_Medico
 
         private void comboBoxMedicos_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            sbyte medicoId = Convert.ToSByte(comboBoxMedicos.SelectedItem.ToString().Split(' ')[0]);
+            DatosMedicoSeleccionado = DataMedico.VerMedico(medicoId);
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            List<Paciente> Pacientes = DataPaciente.VerPacientes();
+            //List<Paciente> Pacientes = DataPaciente.VerPacientes();
             // Crea una instancia del nuevo formulario (Form2)
-            Form2 nuevoFormulario = new Form2(Pacientes);
+            Form2 nuevoFormulario = new Form2();
             // Mostrar el nuevo formulario. 
             nuevoFormulario.ShowDialog();
             //muestra los datos del cliente seleccionado en la panatalla form2 para ser udados en vistos en esta
-            /*if (nuevoFormulario. != null)
+            if (nuevoFormulario.Datospaciente != null)
             {
-                DatosPacienteSelecionado = nuevoFormulario.Datospaci;
-                PacienteSeleccionado.Items.Clear();
-                PacienteSeleccionado.Items.Add(nuevoFormulario.Datospaci.IDPaciente.ToString());
-                PacienteSeleccionado.Items.Add(DatosPacienteSelecionado.Apellido + " " + DatosPacienteSelecionado.Nombre);
-                PacienteSeleccionado.Items.Add(DatosPacienteSelecionado.Dni);
-                PacienteSeleccionado.Items.Add(DatosPacienteSelecionado.MRN.ToString());
-            }*/
-
+                DatosPacienteSelecionado = nuevoFormulario.Datospaciente;
+                listViewDatosPacientes.Items.Clear();
+                listViewDatosPacientes.Items.Add("Apellido y Nombre: " + DatosPacienteSelecionado.NombreCompleto);
+                listViewDatosPacientes.Items.Add("DNI: " + DatosPacienteSelecionado.DNI);
+                listViewDatosPacientes.Items.Add("MRN: " + DatosPacienteSelecionado.HistoriaClinica);
+                listViewDatosPacientes.Items.Add("Fecha Nacimiento: " + DatosPacienteSelecionado.FechaNacimiento);
+                listViewDatosPacientes.Items.Add("Telefono: " + DatosPacienteSelecionado.Telefono);
+                listViewDatosPacientes.Items.Add("Telefono Fijo: " + DatosPacienteSelecionado.TelefonoFijo);
+                listViewDatosPacientes.Items.Add("Notas: " + DatosPacienteSelecionado.Notas);
+                listViewDatosPacientes.Items.Add("Estado: " + DatosPacienteSelecionado.Estado);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Form5 nuevoFormulario = new Form5(DatosPacienteSelecionado, DatosMedicoSeleccionado);
+            nuevoFormulario.ShowDialog();
         }
 
         private void listViewDatosPacientes_SelectedIndexChanged(object sender, EventArgs e)
