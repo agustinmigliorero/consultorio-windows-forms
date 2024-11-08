@@ -71,5 +71,40 @@ namespace CapaDatos
 
             return turnos;
         }
+
+        public static List<Turno> VerTurnosPorMedicoYFecha(int idMedico, DateTime fecha)
+        {
+            List<Turno> turnos = new List<Turno>();
+
+            using (SqlConnection conexion = new SqlConnection(StringConnection.StrConnection))
+            {
+                string query = "SELECT appointmentID, patientId, professionalId, dateTime, canceled, status " +
+                               "FROM Appointments WHERE professionalId = @ProfessionalId AND CAST(dateTime AS DATE) = CAST(@Fecha AS DATE)";
+                using (SqlCommand comando = new SqlCommand(query, conexion))
+                {
+                    comando.Parameters.AddWithValue("@ProfessionalId", idMedico);
+                    comando.Parameters.AddWithValue("@Fecha", fecha);
+
+                    conexion.Open();
+                    using (SqlDataReader dataReader = comando.ExecuteReader())
+                    {
+                        while (dataReader.Read())
+                        {
+                            Turno turno = new Turno
+                            {
+                                IdTurno = Convert.ToInt32(dataReader["appointmentID"]),
+                                IdPaciente = Convert.ToInt32(dataReader["patientId"]),
+                                IdMedico = Convert.ToInt32(dataReader["professionalId"]),
+                                Fecha = Convert.ToDateTime(dataReader["dateTime"]),
+                                Cancelado = Convert.ToBoolean(dataReader["canceled"]),
+                                Estado = dataReader["status"].ToString()
+                            };
+                            turnos.Add(turno);
+                        }
+                    }
+                }
+            }
+            return turnos;
+        }
     }
 }

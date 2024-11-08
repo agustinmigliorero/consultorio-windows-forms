@@ -50,11 +50,13 @@ namespace Consultorio_Medico
             DateTime fechaSeleccionada = monthCalendar1.SelectionRange.Start;
             List<Turno> turnosmedico = DataTurno.VerTurnosPorMedico(DatoMedico.IdMedico);
             //fechaSeleccionada.DayOfWeek
-            foreach(Turno turno in turnosmedico)
+            
+            /*foreach(Turno turno in turnosmedico)
             {
                 turno.Fecha.da
             }
             turnosmedico[0].Fecha.DayOfWeek;
+            */
             List<Agenda> horariosmedico=DataAgenda.VerAgenda(DatoMedico.IdMedico);
             foreach (Agenda horario in horariosmedico)
             {
