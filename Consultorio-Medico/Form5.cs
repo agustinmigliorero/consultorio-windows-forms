@@ -48,18 +48,24 @@ namespace Consultorio_Medico
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
             comboBox1.Items.Clear();
-            DateTime fechaSeleccionada = monthCalendar1.SelectionRange.Start;
+            DateTime fechaSeleccionada = monthCalendar1.SelectionStart;
             List<Turno> turnosmedico = DataTurno.VerTurnosPorMedicoYFecha(DatoMedico.IdMedico,fechaSeleccionada);
             List<Agenda> horariosmedico = DataAgenda.VerAgenda(DatoMedico.IdMedico);
             
             foreach (Agenda horario in horariosmedico)
             {
-                foreach (Turno turno in turnosmedico)
+                if (turnosmedico.Count > 0)
                 {
-                    if (turno.Fecha.TimeOfDay != horario.Horario)
+                    foreach (Turno turno in turnosmedico)
                     {
-                        comboBox1.Items.Add(horario.Horario.ToString());
+                        if (turno.Fecha.TimeOfDay != horario.Horario)
+                        {
+                            comboBox1.Items.Add(horario.Horario.ToString());
+                        }
                     }
+                } else
+                {
+                    comboBox1.Items.Add(horario.Horario.ToString());
                 }
                 
             }
